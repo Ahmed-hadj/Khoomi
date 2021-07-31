@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KHOOMI</title>
+    <link rel="shortcut icon" href="/img/favicone.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <header>
+      <div class="header-top" id="navbar-top">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-light">
+          <a class="navbar-brand" href="#!">
+            <img src="/img/logo.png" alt="mdb logo" />
+          </a>
+
+          <!-- Collapse button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#basicExampleNav13"
+            aria-controls="basicExampleNav13"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Links -->
+          <div class="collapse navbar-collapse" id="basicExampleNav13">
+            <form
+              class="navbar-search pl-0 m-auto mt-3 mb-2 mt-md-0 mb-md-0 mr-3"
+              action=""
+            >
+              <div class="input-group d-block d-md-flex mb-0">
+                <div class="input-group-prepend">
+                  <input
+                    class="
+                      form-control
+                      white-text
+                      rgba-black-light
+                      border-1
+                      z-depth-0
+                      pl-5
+                      search-box
+                    "
+                    type="text"
+                    placeholder="Search For Products, Brands & Categories"
+                    aria-label="Search"
+                  />
+                  <a
+                    href="#!"
+                    class="input-icon d-flex align-items-center"
+                    type="button"
+                    ><i class="fas fa-search mx-3"></i
+                  ></a>
+                </div>
+              </div>
+            </form>
+
+            <!-- Right -->
+            <ul class="navbar-nav shop">
+              <li class="nav-item">
+                <a href="#!" class="nav-link navbar-link-2 waves-effect" data-toggle="modal" data-target="#cart">
+                  <span class="badge badge-pill total-count ">0</span>
+                  <i class="fas fa-shopping-cart pl-0"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#!" class="nav-link navbar-link-2 waves-effect">
+                  <i class="far fa-heart"></i>
+                  <span class="badge badge-pill " id="itemes-liked">0</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/Register.html" class="nav-link navbar-link-2 waves-effect">
+                  <i class="far fa-user"></i>
+                  <span class="badge badge-pill " id="user"></span>
+
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Links -->
+        </nav>
+        <!-- Navbar -->
+      </div>
+      <div class="header-bottom" id="navbar-bottom">
+          <div class="inner">
+            <div class="dropdown">
+                <a class="btn btn-primary dropdown-toggle" href="#!" role="button" id="dropdownMenuLink"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown link
+                </a>
+              
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#!">Action</a>
+                  <a class="dropdown-item" href="#!">Another action</a>
+                  <a class="dropdown-item" href="#!">Something else here</a>
+                </div>
+              </div>
+              <!-- Navbar -->
+              <nav class="navbar navbar-light">
+              
+                  <!-- Breadcrumbs -->
+                  <ol class="breadcrumb">
+                    <li class=""><a class="waves-effect" href="#!">Home</a></li>
+                    <li class=""><a class="waves-effect" href="#!">Templates</a></li>
+                    <li class=" active"><a class="waves-effect" href="#!">E-commerce</a></li>
+                  </ol>
+                  <!-- Breadcrumbs -->
+                
+                </nav>
+          </div>
+
+  <!-- Navbar -->
+      </div>
+    </header>
+    <div class="slider">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="content slide1">
+              <div class="inner descrp">
+                <h1 class="upper blanc slide-right slider-title">
+                  get the new iphone 12 pro
+                </h1>
+                <p class="blanc scale-up-center mt20">
+                  A transformative triple‑camera system that adds tons of
+                  capability without complexity
+                </p>
+                <div class="link">
+                  <a href="" class="cap btn blanc fontsb6 slide-right">
+                    by now</a
+                  >
+                </div>
+              </div>
+              <div class="inner img tilt-in-right-2">
+                <img src="/img/phones.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="content slide1">
+              <div class="inner descrp">
+                <h1 class="upper blanc slide-right slider-title">
+                  get the new iphone 12 pro
+                </h1>
+                <p class="blanc scale-up-center mt20">
+                  A transformative triple‑camera system that adds tons of
+                  capability without complexity
+                </p>
+                <div class="link">
+                  <a href="" class="cap btn blanc fontsb6 slide-right">
+                    by now</a
+                  >
+                </div>
+              </div>
+              <div class="inner img tilt-in-right-2">
+                <img src="/img/smart-watches.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item ">
+            <div class="content slide1">
+              <div class="inner descrp">
+                <h1 class="upper blanc slide-right slider-title">
+                  get the new iphone 12 pro
+                </h1>
+                <p class="blanc scale-up-center mt20">
+                  A transformative triple‑camera system that adds tons of
+                  capability without complexity
+                </p>
+                <div class="link">
+                  <a href="" class="cap btn blanc fontsb6 slide-right">
+                    by now</a
+                  >
+                </div>
+              </div>
+              <div class="inner img tilt-in-right-2">
+                <img src="/img/smart-watches.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="section1">
+
+        <div class="container">
+          <div class="section-1-head">
+            <div class="titre">
+              <h1 class="center upper fs35 noir  fontw">Recommended For You</h1>
+            </div>
+          </div>
+            <div class="row">
+              <div class="col col-lg-3">
+                <div class="card" style="width: 18rem;">
+                  <img src="/img/Base-1.png" class="card-img-top" alt="...">
+                  <div class="card-body center">
+                    <a href="" class="btn add-to-cart"  data-name="apple-watch-white" data-price="500" data-src="/img/Base-1"><i class="far fa-plus fontw fs20"></i>Add to cart </a>
+                   <div class="option ">
+                           
+                    <span class="prcie">500$</span>
+        
+                    <div class="like">
+                      <a  onclick="changeColor(this)" >
+                    <i class="far fa-heart"></i>
+                      </a>
+                    </div>  
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-lg-3">
+                <div class="card" style="width: 18rem;">
+                  <img src="/img/Base.png" class="card-img-top" alt="...">
+                  <div class="card-body center">
+                                       <a href="" class="btn add-to-cart"  data-name="apple-watch-black" data-price="400" data-src="/img/Base"><i class="far fa-plus fontw fs20"></i>Add to cart </a>
+                              <div class="option">
+                    <span class="prcie">400$</span>
+                    <div class="like">
+                        <a  onclick="changeColor(this)">
+                    <i class="far fa-heart"></i>
+                      </a>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-lg-3">
+                <div class="card" style="width: 18rem;">
+                  <img src="/img/red.png" class="card-img-top" alt="...">
+                  <div class="card-body center">
+                                       <a href="" class="btn add-to-cart"  data-name="apple-watch-red" data-price="550" data-src="/img/red"><i class="far fa-plus fontw fs20"></i>Add to cart </a>
+
+                              <div class="option">
+                    <span class="prcie">550$</span>
+                    <div class="like">
+                        <a  onclick="changeColor(this)">
+                    <i class="far fa-heart"></i>
+                      </a>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-lg-3">
+                <div class="card" style="width: 18rem;">
+                  <img src="/img/blue.jpg" class="card-img-top" alt="...">
+                  <div class="card-body center">
+                                       <a href="" class="btn add-to-cart"  data-name="apple-watch-blue" data-price="600" data-src="/img/blue"><i class="far fa-plus fontw fs20"></i>Add to cart </a>
+                              <div class="option">
+                    <span class="prcie">600$</span>
+                    <div class="like">
+                        <a  onclick="changeColor(this)">
+                    <i class="far fa-heart"></i>
+                      </a>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+        </div>
+      </section>
+      <section class="section2 cta1"> 
+        <div class="container">
+          <div class="row">
+            <div class=".col-md-6">
+              <h2 class="blanc fs40 left fontw">Sneakers Never Run Out Of Style Get 50% Off Sitewide</h2>
+            </div>
+            <div class=".col-md-6"><button type="button" class="btn btn-outline-light btn-lg fs26 fontsb5">Start Shopping</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section3">
+
+        <div class="container">
+          <div class="section-1-head">
+            <div class="titre">
+              <h2 class="center upper fs35 noir  fontw">New Collection</h2>
+            </div>
+          </div>
+            <div class="row sup">
+              <div class="row inf">
+                <div class="col col-lg-6">
+                  <div class="card" style="width: 18rem;">
+                    <img src="/img/Image-1.png" class="card-img-top" alt="...">
+                    <div class="card-body center">
+                                         <a href="" class="btn add-to-cart" data-src="/img/Image-1"  data-name="Nike-Air-Force-1 " data-price="350" ><i class="far fa-plus fontw fs20"></i>Add to cart </a>
+
+                                <div class="option">
+                    <span class="prcie">350$</span>
+                    <div class="like">
+                        <a  onclick="changeColor(this)">
+                    <i class="far fa-heart"></i>
+                      </a>
+                    </div>
+                   </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-lg-6">
+                  <div class="card" style="width: 18rem;">
+                    <img src="/img/Image-2.png" class="card-img-top" alt="...">
+                    <div class="card-body center">
+                                         <a href="" class="btn add-to-cart" data-src="/img/Image-2"   data-name="Nike_Signal_D-Ms-X" data-price="400"><i class="far fa-plus fontw fs20"></i>Add to cart </a>
+
+                                <div class="option">
+                    <span class="prcie">400$</span>
+                    <div class="like">
+                        <a  onclick="changeColor(this)">
+                    <i class="far fa-heart"></i>
+                      </a>
+                    </div>
+                   </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-lg-6">
+                  <div class="card" style="width: 18rem;">
+                    <img src="/img/Image-3.png" class="card-img-top" alt="...">
+                    <div class="card-body center">
+                                         <a href="" class="btn add-to-cart" data-src="/img/Image-3"  data-name="Nike Blazer" data-price="200"><i class="far fa-plus fontw fs20"></i>Add to cart </a>
+
+                                <div class="option">
+                    <span class="prcie">200$</span>
+                    <div class="like">
+                        <a  onclick="changeColor(this)">
+                    <i class="far fa-heart"></i>
+                      </a>
+                    </div>
+                   </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col col-lg-6">
+                  <div class="card" style="width: 18rem;">
+                    <img src="/img/Image.png" class="card-img-top" alt="...">
+                    <div class="card-body center">
+                                         <a href="" class="btn add-to-cart" data-src="/img/Image"  data-name="Nike-SB-Dunk" data-price="100"><i class="far fa-plus fontw fs20"></i>Add to cart </a>
+
+                                <div class="option">
+                    <span class="prcie">100$</span>
+                    <div class="like">
+                        <a  onclick="changeColor(this)">
+                    <i class="far fa-heart"></i>
+                      </a>
+                    </div>
+                   </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col col-lg-6 card-5">
+                <div class="card" style="width: 18rem;">
+                  <img src="/img/Image0.png" class="card-img-top" alt="...">
+                  <div class="card-body center">
+                                       <a href="" class="btn add-to-cart" data-src="/img/Image0"  data-name="Nike-Dunk" data-price="450"><i class="far fa-plus fontw fs20"></i>Add to cart </a>
+
+                              <div class="option">
+                    <span class="prcie">450$</span>
+                    <div class="like">
+                        <a  onclick="changeColor(this)">
+                    <i class="far fa-heart"></i>
+                      </a>
+                    </div>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+        </div>
+      </section>
+      <section class="section2 cta2"> 
+        <div class="container">
+          <div class="row">
+            <div class=".col-md-6">
+              <h2 class="blanc fs40 left fontw">Sneakers Never Run Out Of Style Get 50% Off Sitewide</h2>
+            </div>
+            <div class=".col-md-6"><button type="button" class="btn btn-outline-light btn-lg fs26 fontsb5">Start Shopping</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section4">
+        <div class="section-1-head">
+          <div class="titre">
+            <h2 class="center upper fs35 noir  fontw">Smart Phones</h2>
+          </div>
+        </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card">
+        <img src="img/phones.png" alt="">
+        <div class="card-body center">
+                             <a href="" class="btn add-to-cart"  data-name="apple-watch-white" data-price="500"><i class="far fa-plus fontw fs20"></i>Add to cart </a>
+
+                    <div class="option">
+                    <span class="prcie">999$</span>
+                    <div class="like">
+                        <a  onclick="changeColor(this)">
+                    <i class="far fa-heart"></i>
+                      </a>
+                    </div>
+                   </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      </section>
+    </main>
+
+    <!-- Modal -->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div>Total price: $<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-outline-success">Order now</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+    <script src="scripts.js"></script>
+
+  </body>
+</html>
